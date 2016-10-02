@@ -9,7 +9,7 @@ body {
 }
 .center {
 	text-align: center;
-    margin-left: 600px;
+    margin: auto;
     width: 600px;
     height: 800px;
     padding: 10px;
@@ -20,6 +20,7 @@ body {
     width: 80%;
     padding: 10px 20px;
     background-color: #FFF8DC;
+    border: 2px solid grey;
     border-radius: 4px;
 }
 p {
@@ -30,9 +31,11 @@ p {
 h1, h3 {
     color: white;
 }
-input[type=submit] {
+a {
+    display: inline-block;
     width: 80%;
     margin: 30px;
+    text-decoration: none;
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -46,7 +49,7 @@ input[type=submit] {
 
 <body>
 <div class="center">
-<form action="http://www.w3schools.com" target="_blank">    
+<form action>    
 <h1>Заявка на подключение к интернету</h1>
 <h3>Для подключения к интернету заполните следующую форму:</h3>
 <p>Укажите свое имя и фамилию</p>
@@ -59,7 +62,8 @@ input[type=submit] {
 <input type="text" name="phone" placeholder="Например, +7921******">
 <p>E-mail:</p>
 <input type="text" name="mail" placeholder="Например, mail@mil.ru"> 
-<input type="submit" value="Готово"></input>
+
+<p><a href="http://www.w3schools.com">Готово</a></p>
 </form>
 </body>
 </html>
